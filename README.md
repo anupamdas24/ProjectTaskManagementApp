@@ -1,7 +1,5 @@
-# Go Todo REST API Project
-A RESTful API Project for simple todo application
-
-It is a just simple project for making RESTful API using **gorilla/mux** (A nice mux library) and **gorm** (An ORM for Go)
+# Project Task Management APP
+A RESTful API Project for project task management
 
 ## Installation & Run
 
@@ -33,12 +31,12 @@ go build
 ```
 ├── app
 │   ├── app.go
-│   ├── handler          // Our API core handlers
+│   ├── handler          // API handlers
 │   │   ├── common.go    // Common response functions
 │   │   ├── projects.go  // APIs for Project model
 │   │   └── tasks.go     // APIs for Task model
 │   └── model
-│       └── model.go     // Models for our application
+│       └── model.go     // Models for application
 ├── config
 │   └── config.go        // Configuration
 └── main.go
@@ -87,12 +85,3 @@ go build
 * `PUT` : Complete a task of a project
 * `DELETE` : Undo a task of a project
 
-## Todo
-
-- [x] Support basic REST APIs.
-- [ ] Support Authentication with user for securing the APIs.
-- [ ] Make convenient wrappers for creating API handlers.
-- [ ] Write the tests for all APIs.
-- [x] Organize the code with packages
-- [ ] Make docs with GoDoc
-- [ ] Building a deployment process 
